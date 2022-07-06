@@ -4,7 +4,7 @@ let data = ()=>{
     let country = document.getElementById('country').value;
     let form = document.getElementById('form');
     
-    axios.get(`https://api.aladhan.com/v1/timingsByCity?city=${city}&country=""&method=8`)
+    axios.get(`https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}&method=`)
             .then(function (response) {
                 data = response.data;
 
